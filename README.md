@@ -40,14 +40,24 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] Mention two parts of Express that you learned about this week.
 
+    Middleware and convenience helpers are two parts of Express.
+
 - [ ] Describe Middleware?
+
+    Middleware is like a layer of software that connects client-side and backend. Middleware exists as functions that access the req, res objects and next function and can perform multiple tasks like execute code, make changes to req and res objects, and call on the next middleware in the code stack.
 
 - [ ] Describe a Resource?
 
+    Any type or piece of data, like images, videos, objects or text strings that can be retrieved is a resource.
+
 - [ ] What can the API return to help clients know if a request was successful?
+
+    The API can return a ‘200’ status code, along with the requested item, that lets the clients know their request worked. Likewise, the API can return specific error codes that let the client know what is missing from their request OR that there is an issue they can’t fix (500 codes).
 
 - [ ] How can we partition our application into sub-applications?
 
+    Use routers to tie the sub-applications together into the main application.
+    
 ## Minimum Viable Product
 
 - [ ] Configure an _npm script_ named _"server"_ that will execute your code using _nodemon_. Make _nodemon_ be a development time dependency only, it shouldn't be deployed to production.
